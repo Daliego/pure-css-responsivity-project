@@ -1,0 +1,403 @@
+/* body {
+    display: flex;
+    flex-direction: row;
+}
+
+.sideBar {
+    width: 20%;
+    height: 100vh;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.pageBody {
+    width: 80%;
+    height: 100vh;
+    background-color: blue;
+    padding: 20px;
+} */
+
+@media (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .sideBar {
+        width: 100vw;
+        height: 10vh;
+        background-color: #f7e0ae;
+        display: flex;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .pageBody {
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        background-color: #fa748f;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .video-block {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        background-color: #998496;
+        width: 80vw;
+        height: 40vh;
+    }
+
+
+    .circle {
+        height: 25%;
+        width: 25%;
+        align-self: center;
+        background-color: #2d2c26;
+        border-radius: 50%;
+    }
+
+    .headerArea {
+        background-color: antiquewhite;
+        width: 20vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        .headerCircle {
+            height: 50%;
+            width: 50%;
+            background-color: #2d2c26;
+            border-radius: 50%;
+            align-self: center;
+        }
+
+        .textArea {
+            display: none;
+        }
+    }
+
+    .circlesArea {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80vw;
+        height: 100%;
+        background-color: #f1b3bf;
+
+        .sideBarCard {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 80vw;
+            height: 100%;
+            background-color: #f1b3bf;
+
+
+            .sideBarCircle {
+                height: 40%;
+                width: 50%;
+                align-self: center;
+                background-color: #2d2c26;
+                border-radius: 50%;
+            }
+
+            .side-bar-text {
+                display: none;
+            }
+        }
+    }
+
+    .side-bar-button {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) {
+    body {
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .sideBar {
+        width: 30vw;
+        height: 100vh;
+        background-color: #f7e0ae;
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .pageBody {
+        width: 70vw;
+        height: 100vh;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        background-color: #fa748f;
+
+        /* mexi aqui */
+        padding-left: 4%;
+        padding-right: 4%;
+
+        margin: 0%;
+    }
+
+    .video-block {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        background-color: #998496;
+        width: 80vw;
+        height: 40vh;;
+    }
+
+
+    .circle {
+        height: 25%;
+        width: 25%;
+        align-self: center;
+        background-color: #2d2c26;
+        border-radius: 50%;
+    }
+
+    .headerArea {
+        background-color: antiquewhite;
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: #2d2c26 3px solid;
+
+        .headerCircle {
+            height: 40%;
+            width: 40%;
+            background-color: #2d2c26;
+            border-radius: 50%;
+            align-self: center;
+        }
+
+        .textArea {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 8%;
+
+            .headerText {
+                color: green;
+                font-size: small;
+            }
+            
+            .secondText {
+                color: greenyellow;
+                font-size: small;
+            }
+        }
+    }
+
+    .circlesArea {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 85vh;
+        background-color: #f1b3bf;
+
+        .sideBarCard {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 12%;
+            background-color: #f1b3bf;
+            justify-content: space-around;
+            
+            .sideBarCircle {
+                height: 60%;
+                width: 40%;
+                align-self: center;
+                background-color: #2d2c26;
+                border-radius: 50%;
+                margin-bottom: 5%;
+            }
+
+            .side-bar-text {
+                display: flex;
+                align-self: center;
+                color: red;
+            }
+        }
+
+        .side-bar-button {
+            display: flex;
+            align-self: center;
+            width: 50%;
+            height: 5%;
+            background-color: #84d65e;
+            color: white;
+            text-align: center; 
+            justify-content: center;
+            align-content: center;
+            border-radius: 10%;
+        }
+    }
+
+}
+
+@media (min-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .sideBar {
+        width: 30vw;
+        height: 100vh;
+        background-color: #f7e0ae;
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .pageBody {
+        width: 70vw;
+        height: 100vh;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        background-color: #fa748f;
+
+        /* mexi aqui */
+        padding-left: 8%;
+        padding-right: 8%;
+
+        margin: 0%;
+    }
+
+    .video-block {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        background-color: #998496;
+        width: 50vw;
+        height: 40vh;;
+    }
+
+
+    .circle {
+        height: 25%;
+        width: 25%;
+        align-self: center;
+        background-color: #2d2c26;
+        border-radius: 50%;
+    }
+
+    .headerArea {
+        background-color: antiquewhite;
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-bottom: #2d2c26 3px solid;
+        
+        .headerCircle {
+            height: 40%;
+            width: 23%;
+            background-color: #2d2c26;
+            border-radius: 50%;
+            align-self: center;
+        }
+
+        .textArea {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            flex-direction: column;
+            text-align:start;
+            padding: 8%;
+
+            .headerText {
+                color: green;
+                font-size: small;
+            }
+            
+            .secondText {
+                color: greenyellow;
+                font-size: small;
+            }
+        }
+    }
+
+    .circlesArea {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 85vh;
+        background-color: #f1b3bf;
+
+        .sideBarCard {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 12%;
+            background-color: #f1b3bf;
+            padding: 0;
+
+            .sideBarCircle {
+                height: 60%;
+                width: 25%;
+                align-self: center;
+                background-color: #2d2c26;
+                border-radius: 50%;
+                margin-bottom: 5%;
+            }
+
+            .side-bar-text {
+                display: flex;
+                justify-self: flex-start;
+                color: red;
+                font-size:x-large;
+            }
+        }
+
+        .side-bar-button {
+            display: flex;
+            align-self: center;
+            width: 80%;
+            height: 5%;
+            background-color: #84d65e;
+            color: white;
+            text-align: center; 
+            justify-content: center;
+            align-content: center;
+            border-radius: 10%;
+        }
+    }
+
+}
